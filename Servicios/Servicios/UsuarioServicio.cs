@@ -16,11 +16,9 @@ namespace Servicios.Servicios
     {
         private readonly PersicufContext _context;
 
-        private readonly IJWT _jwt;
-        public UsuarioServicio(PersicufContext context, IJWT jwt)
+        public UsuarioServicio(PersicufContext context)
         {
             _context = context;
-            _jwt = jwt;
         }
         public async Task<Confirmacion<Usuario>> DeleteUsuario(int ID)
         {
@@ -249,7 +247,6 @@ namespace Servicios.Servicios
 
                 var data = new LoginUsuarioConRolDTO
                 {
-                    Token = _jwt.GenerarToken(usuarioBD),
                     Rol = usuarioBD.Permiso.Descripcion,
                     Id = usuarioBD.UsuarioID,
                     LoginUsuario = loginUsuario

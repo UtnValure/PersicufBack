@@ -48,7 +48,6 @@ builder.Services.AddScoped<ITalleNumericoServicio, TalleNumericoServicio>();
 builder.Services.AddScoped<IUbicacionServicio, UbicacionServicio>();
 builder.Services.AddScoped<IUsuarioServicio, UsuarioServicio>();
 builder.Services.AddScoped<IZapatoServicio, ZapatoServicio>();
-builder.Services.AddScoped<IJWT, JWT>();
 builder.Services.AddScoped<IEnvioAPIServicio, EnvioAPIServicio>();
 var app = builder.Build();
 

@@ -140,7 +140,6 @@ namespace Persicuf.Controllers
                     nombreUsuario = respuesta.Datos.LoginUsuario.NombreUsuario,
                     id = respuesta.Datos.Id,
                     rol = respuesta.Datos.Rol,
-                    token = respuesta.Datos.Token
                 }
             });
         }
