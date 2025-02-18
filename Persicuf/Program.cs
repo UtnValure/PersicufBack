@@ -10,7 +10,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") // Dirección de tu frontend (ajusta según corresponda)
+        policy.WithOrigins("https://persicuffront-production.up.railway.app") // DirecciÃ³n de tu frontend (ajusta segÃºn corresponda)
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials(); // Si necesitas enviar cookies
